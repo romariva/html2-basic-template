@@ -36,194 +36,184 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="hero" data-test="hero">
+      <section class="hero slider" data-test="hero">
         <h1 class="visually-hidden">Сайт интернет-магазина кофейных напитков.</h1>
-        <div class="hero__wrapper">
-          <header class="hero__header">
-            <a class="hero__link" href="#">
-              <img src="../images/flat_white_img.png" width="280" height="280" alt="Банка с кофейным напитком">
-            </a>
-          </header>
+        <div class="slider-container">
+          <h2 class="visually-hidden">Слайдер кофейных напитков</h2>
+          <div class="slider">
+            <img src="images/flat_white_img.png" width="280" height="280" alt="Декаф Флэт Уайт">
+            <h3 class="slider__badge">Новинка</h3>
+            <p class="slider__header">Декаф Флэт Уайт</p>
+            <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком — то,что нужно для расслабления
+               после тяжёлого рабочего дня</p>
+          </div>
+          <button class="hero__prev-button" type="button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+          <button class="hero__next-button" type="button" aria-label="Посмотреть следующий слайд">&gt;</button>
+        </div>
+        <div class="hero__buttons">
+          <span class="hero__old-price">295₽</span>
+          <span class="hero__new-price">225₽</span>
+          <button class="hero__order-button" type="button" aria-label="Заказать">Заказать</button>
         </div>
       </section>
       <section class="advantages" data-test="features">
-        <h2 class="visually-hidden">Главные причины выбрать Drink2Go</h2>
+        <h2 class="visually-hidden">Преимущества напитков Drink2Go</h2>
         <div class="advantages__item-wrapper">
-          <div class="advantages__title advantages__title--intro">
-            <h3 class="advantages__header">Седона — небольшой <br class="breaker"> городок в АРИЗОНЕ, <br class="breaker breaker--desktop"> заслуживающий
-              большего!</h3>
+          <div class="advantages__title">
+            <h3 class="advantages__header">Преимущества</h3>
+            <p class="advantages__intro">Главные причины выбрать Drink2Go</p>
           </div>
-          <div class="advantages__info">
-            <p class="advantages__description">Рассмотрим 5 причин, по которым <br class="breaker">Седона круче, чем
-              гранд каньон!</p>
-          </div>
-        </div>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--contrast advantages__item--triangle">
-            <div class="advantages__item-wrapper">
-              <div class="advantages__title advantages__title--contrast">
-                <h3 class="advantages__header ">НАСТОЯЩИЙ <br class="breaker breaker--desktop">ГОРОДОК</h3>
-              </div>
-              <p class="advantages__number advantages__number--contrast">— №1 —</p>
-              <div class="advantages__info advantages__info--contrast">
-                <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br class="breaker breaker--desktop">  ТАМ ТЕЧЕТ СВОЯ <br class=" breaker breaker--tablet"> ЖИЗНЬ </p>
-              </div>
-            </div>
-            <a class=" advantages__link" href="#">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/index/photo-city-desktop@1x.webp 1x, img/index/photo-city-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/index/photo-city-tablet@1x.webp 1x, img/index/photo-city-tablet@2x.webp 2x">
-                    <source type="image/webp"
-                      srcset="img/index/photo-city-mobile@1x.webp 1x, img/index/photo-city-mobile@2x.webp 2x">
-                    <source media="(min-width: 1200px)"
-                      srcset="img/index/photo-city-desktop@1x.jpg 1x, img/index/photo-city-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)"
-                      srcset="img/index/photo-city-tablet@1x.jpg 1x, img/index/photo-city-tablet@2x.jpg 2x">
-                    <img class="advantages__image" src="img/index/photo-city-mobile@1x.jpg"
-                      srcset="img/index/photo-city-mobile@1x.jpg 1x, img/index/photo-city-mobile@2x.jpg 2x" width="320"
-                      height="256" alt="Красивые дома.">
-                  </picture>
-            </a>
-          </li>
           <li class="advantages__item">
-            <div class="advantages__item-wrapper-plus">
-              <div class="advantages__title-plus">
-                <h3 class="advantages__header advantages__header-plus">
-                  <span class="advantages__icon-home"></span> Жилье
-                </h3>
+            <div class="advantages__item-wrapper">
+              <div class="advantages__title">
+                <span class="advantages__icon"></span>
+                <h3 class="advantages__header ">Скорость</h3>
               </div>
               <div class="advantages__info">
-                <p class="advantages__description advantages__description-plus">Рекомендуем пожить в <br
-                    class=" breaker"> настоящем<br class=" breaker breaker--desktop"> мотеле, все как в кино!</p>
+                <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
               </div>
             </div>
           </li>
           <li class="advantages__item">
-            <div class="advantages__item-wrapper-plus">
-              <div class="advantages__title-plus">
-                <h3 class="advantages__header advantages__header-plus"><span class="advantages__icon-food">
-                  </span>Еда
-                </h3>
+            <div class="advantages__item-wrapper">
+              <div class="advantages__title">
+                <span class="advantages__icon"></span>
+                <h3 class="advantages__header ">Удобство</h3>
               </div>
               <div class="advantages__info">
-                <p class="advantages__description advantages__description-plus">
-                  Всегда заказывайте фирменный бургер, <br class=" breaker breaker--tablet"><br class=" breaker breaker--desktop"> вы не разочаруетесь!
-                </p>
+                <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
               </div>
             </div>
           </li>
           <li class="advantages__item">
-            <div class="advantages__item-wrapper-plus">
-              <div class="advantages__title-plus">
-                <h3 class="advantages__header advantages__header-plus"><span
-                    class="advantages__icon-gift"></span>Сувениры</h3>
-              </div>
-              <div class="advantages__info advantages__info-plus">
-                <p class="advantages__description advantages__description-plus">Не
-                  только китайского, <br class="breaker--desktop">но и местного производства!</p>
-              </div>
-            </div>
-          </li>
-          <li class="advantages__item advantages__item--contrast advantages__item--reverse">
-            <a class="advantages__link" href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/index/photo-bridge-desktop@1x.webp 1x, img/index/photo-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/index/photo-bridge-tablet@1x.webp, img/index/photo-bridge-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/index/photo-bridge-modile@1x.webp 1x, img/index/photo-bridge-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)"
-                  srcset="img/index/photo-bridge-desktop@1x.jpg 1x, img/index/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)"
-                  srcset="img/index/photo-bridge-tablet@1x.jpg, img/index/photo-bridge-tablet@2x.jpg 2x">
-                <img class="advantages__image" src="img/index/photo-bridge-modile@1x.jpg"
-                  srcset="img/index/photo-bridge-modile@1x.jpg 1x, img/index/photo-bridge-mobile@2x.jpg 2x" width="320"
-                  height="260" alt="Красивые горы.">
-              </picture>
-            </a>
             <div class="advantages__item-wrapper">
-              <div class="advantages__title advantages__title--contrast2">
-                <h3 class="advantages__header">ТАМ ЕСТЬ <br class="breaker breaker--desktop "> МОСТ ДЬЯВОЛА</h3>
+              <div class="advantages__title">
+                <span class="advantages__icon"></span>
+                <h3 class="advantages__header ">Бодрость</h3>
               </div>
-              <p class="advantages__number advantages__number--contrast2">— №2 —</p>
-              <div class="advantages__info advantages__info--contrast2">
-                <p class="advantages__description">Да, по нему можно пройти! <br class="breaker breaker--desktop">Если вы <br class="breaker">осмелитесь, конечно</p>
-              </div>
-            </div>
-          </li>
-          <li class="advantages__item advantages__additional advantages__additional--line">
-            <div class="advantages__item-wrapper-gray">
-              <div class="advantages__title-gray advantages__title-gray--top">
-                <h3 class="advantages__header">НЕБОЛЬШАЯ <br class="breaker--desktop">ПЛОЩАДЬ</h3>
-              </div>
-              <p class="advantages__number">— №3 —</p>
-              <div class="advantages__info-gray">
-                <p class="advantages__description">Все интересные места<br class="breaker breaker--tablet"> находятся <br class="breaker"> очень <br class="breaker breaker--desktop">близко</p>
+              <div class="advantages__info">
+                <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
               </div>
             </div>
           </li>
-          <li class="advantages__item advantages__additional advantages__additional--line">
-            <div class="advantages__item-wrapper-gray">
-              <div class="advantages__title-gray">
-                <h3 class="advantages__header">КРАСИВАЯ<br class="breaker breaker--desktop"> ДОРОГА</h3>
+          <li class="advantages__item">
+            <div class="advantages__item-wrapper">
+              <div class="advantages__title">
+                <span class="advantages__icon"></span>
+                <h3 class="advantages__header ">Экологичность</h3>
               </div>
-              <p class="advantages__number">— №4 —</p>
-              <div class="advantages__info-gray">
-                <p class="advantages__description">Ехать в СЕДОНУ из ЛАС-<br class="breaker breaker--tablet">ВЕГАСА <br class="breaker"> совсем <br
-                    class="breaker breaker--tablet"><br class="breaker breaker--desktop"> не скучно!</p>
-              </div>
-            </div>
-          </li>
-          <li class="advantages__item advantages__additional">
-            <div class="advantages__item-wrapper-gray">
-              <div class="advantages__title-gray advantages__title-gray--top">
-                <h3 class="advantages__header">МАЛО <br class="breaker--desktop"> ТУРИСТОВ</h3>
-              </div>
-              <p class="advantages__number">— №5 —</p>
-              <div class="advantages__info-gray">
-                <p class="advantages__description">Большинство едет в гранд каньон <br class="breaker"> и толпится там</p>
+              <div class="advantages__info">
+                <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
               </div>
             </div>
           </li>
         </ul>
+      </div>
   </section>
-  <section class="search" data-test="catalog">
-    <h2 class="visually-hidden">Поиск гостиниц</h2>
-    <div class="search__wrapper">
-      <p class="search__header">Заинтересовались?</p>
-      <p class="search__description">Укажите предполагаемые даты поездки, <br class="breaker breaker--tablet"><br class="breaker breaker--desktop">и мы покажем вам лучшие предложения гостиниц в
-        Седоне</p>
-      <button class="search__button button" type="button">НАЙТИ ГОСТИНИЦУ</button>
+  <section class="catalog" data-test="catalog">
+    <h2 class="visually-hidden">Выбор параметров кофе в каталоге</h2>
+    <div class="catalog__wrapper">
+      <p class="catalog__header">Каталог</p>
+      <p class="catalog__description">Каталог кофейных напитков</p>
     </div>
+    <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="form__milk">
+        <legend class="form__legend">Наличие молока</legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label form__label-check" for="milk">
+              <input class="form__input" type="radio" name="feedback" id="milk" checked>
+              <span class="form__item form__item-mark"></span>
+              <span class="form__item form__item-label ">Неважно</span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label " for="milk_animal">
+              <input class="form__input" type="radio" name="feedback" id="milk_animal">
+              <span class="form__item form__item-mark"></span>
+              <span class="form__item form__item-label">Только животное</span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="milk_grow">
+              <input class="form__input" type="radio" name="feedback" id="milk_grow">
+              <span class="form__item form__item-mark"></span>
+              <span class="form__item form__item-label">Только растительное</span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="without_milk">
+              <input class="form__input" type="radio" name="feedback" id="without_milk" disabled>
+              <span class="form__item form__item-mark"></span>
+              <span class="form__item form__item-label">Без молока</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__country">
+          <legend class="form__legend">Страна произрастания</legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <div class="form__container">
+              <label class="form__label form__label-check" for="brasil">
+                <input class="form__input" type="checkbox" name="country-one" id="brasil" checked>
+                <span class="form__item form__item-mark">
+                </span>
+                <span class="form__item form__item-label">Бразилия</span>
+              </label>
+            </div>
+          </li>
+          <li class="form__item form__item-feedback">
+            <label class="form__label form__label-check" for="ethiopia">
+              <input class="form__input" type="checkbox" name="country-two" id="ethiopia">
+              <span class="form__item form__item-mark">
+              </span>
+              <span class="form__item form__item-label">Эфиопия</span>
+            </label>
+          </li>
+          <li class="form__item  form__item-feedback">
+            <div class="form__container">
+              <label class="form__label form__label-check" for="colombia">
+                <input class="form__input" type="checkbox" name="country-three" id="colombia">
+                <span class="form__item form__item-mark">
+                </span>
+                <span class="form__item form__item-label">Колумбия</span>
+              </label>
+            </div>
+          </li>
+          <li class="form__item form__item-feedback">
+            <label class="form__label form__label-check" for="costa-rica">
+              <input class="form__input" type="checkbox" name="country-four" id="costa-rica">
+              <span class="form__item form__item-mark">
+              </span>
+              <span class="form__item form__item-label">Коста-Рика</span>
+            </label>
+          </li>
+          <li class="form__item form__item-feedback">
+            <label class="form__label form__label-check" for="peru">
+              <input class="form__input" type="checkbox" name="country-five" id="peru" disabled>
+              <span class="form__item form__item-mark">
+              </span>
+              <span class="form__item form__item-label">Перу</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="form__button">
+        <div class="form__button-wrapper">
+          <button class="form__enter-button button">Применить</button>
+          <button class="form__reset-button button">Сбросить</button>
+        </div>
+      </fieldset>
+    </form>
   </section>
   <section class="map" data-test="map">
     <h2 class="visually-hidden">Карта.</h2>
     <div class="map__wrapper">
-      <span class="map__icon"><span class="visually-hidden">Маркер на карте.</span></span>
-      <iframe class="map__google"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1180909.4306491544!2d-112.29008533380927!3d35.16080312360696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1669103336314!5m2!1sru!2sru"
-        width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
       <a class="map__link" href="#">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)"
-            srcset="img/index/map-desktop@1x.webp 1x, img/index/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/index/map-tablet@1x.webp, img/index/map-tablet@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/index/map-mobile@1x.webp 1x, img/index/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)"
-            srcset="img/index/map-desktop@1x.jpg 1x, img/index/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/index/map-tablet@1x.jpg, img/index/map-tablet@2x.jpg 2x">
-          <img class="map__image" src="img/index/map-mobile@1x.jpg"
-            srcset="img/index/map-mobile@1x.jpg 1x, img/index/map-mobile@2x.jpg 2x" width="320"
-            height="350" alt="Карта.">
-        </picture>
+        <img class="map__image" src="images/map.png" width="320" height="420" alt="Карта">
       </a>
     </div>
   </section>
