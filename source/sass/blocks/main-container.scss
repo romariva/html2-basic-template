@@ -1,0 +1,14 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  flex-grow: 1;
+  margin: 0 auto;
+  min-height: 100%;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
