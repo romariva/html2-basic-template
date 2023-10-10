@@ -46,6 +46,7 @@
     margin: 0;
     left: 20px;
     z-index: 1;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -66,17 +67,24 @@
 }
 
 .main-header__user {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: 150px;
+    z-index: 1;
    @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-header__cart {
-   @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-}.main-header__menu {
+  display: block;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    left: 200px;
+    z-index: 1;
    @media (min-width: $tablet-width) {
     display: none;
   }
